@@ -1,5 +1,8 @@
-# Customer-Churn-Prediction-
-Customer Churn Prediction – End-to-End Data Science Project
+# Customer-Churn-Predictio
+
+# The app is deployed link -> (https://brotech-customer-churn.streamlit.app/)
+
+Churn Prediction – End-to-End Data Science Project
 
 1. Overview
 This project focuses on building an end-to-end Customer Churn Prediction system.
