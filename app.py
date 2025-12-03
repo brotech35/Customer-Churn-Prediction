@@ -1,4 +1,4 @@
-# pp.py
+# app.py
 
 import streamlit as st
 import pandas as pd
@@ -75,9 +75,12 @@ input_df = user_input_features()
 
 if st.button("Predict Churn"):
     prediction = model.predict(input_df)[0]
-    prediction_prob = model.predict_proba(input_df)[0][1]
+    prediction_prob = model.predict_proba(input_df)[0]  # [prob_no_churn, prob_churn]
+
+    prob_churn = prediction_prob[1] * 100  # as percentage
+    prob_no_churn = prediction_prob[0] * 100  # as percentage
 
     if prediction == 1:
-        st.error(f"The customer is likely to churn. Probability: {prediction_prob:.2f}")
+        st.error(f"The customer is likely to churn.\nChance of leaving: {prob_churn:.0f}%\nChance of staying: {prob_no_churn:.0f}%")
     else:
-        st.success(f"The customer is unlikely to churn. Probability: {prediction_prob:.2f}")
+        st.success(f"The customer is unlikely to churn.\nChance of leaving: {prob_churn:.0f}%\nChance of staying: {prob_no_churn:.0f}%")
