@@ -8,7 +8,9 @@
 ## Churn Prediction – End-to-End Data Science Project
 
 ### 1. Overview
-This project focuses on building an end-to-end Customer Churn Prediction system. The workflow includes data cleaning, exploratory data analysis, feature engineering, model training, hyperparameter tuning, evaluation, and deployment using Streamlit. The final model uses Logistic Regression, selected based on the highest ROC-AUC score.
+- This project focuses on building an end-to-end Customer Churn Prediction system. 
+- The workflow includes data cleaning, exploratory data analysis, feature engineering, model training, hyperparameter tuning, evaluation, and deployment using Streamlit.
+- The final model uses Logistic Regression, selected based on the highest ROC-AUC score.
 
 ### 2. Dataset
 The dataset contains customer information from a telecom company, including:  
