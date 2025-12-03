@@ -83,4 +83,4 @@ if st.button("Predict Churn"):
     if prediction == 1:
         st.error(f"The customer is likely to churn.\nChance of leaving: {prob_churn:.0f}%\nChance of staying: {prob_no_churn:.0f}%")
     else:
-        st.success(f"The customer is unlikely to churn.\nChance of leaving: {prob_churn:.0f}%\nChance of staying: {prob_no_churn:.0f}%")
+        st.success(f"The customer is unlikely to churn.\nChance of staying: {prob_no_churn:.0f}%\nChance of leaving: {prob_churn:.0f}%")
